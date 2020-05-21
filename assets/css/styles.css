@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  color: brown;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+}
+
+a {
+  color: brown;
+  font-weight: bold;
+}
+
+li {
+  list-style-type: none;
+}
+
+#button {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin-top: -125px;
+  margin-left: -125px;
+  cursor: pointer;
+}
+
+#button:before {
+  content: '';
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  margin-top: 15px;
+  margin-left: 15px;
+
+  -webkit-box-shadow: inset 0px -25px 25px 0px rgba(0,0,0,0.05);
+  -moz-box-shadow: inset 0px -25px 25px 0px rgba(0,0,0,0.05);
+  box-shadow: inset 0px -25px 25px 0px rgba(0,0,0,0.05);
+}
+
+.button-shadow {
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.15);
+}
+
+#chibi {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  z-index: 3;
+}
+
+#buttons-nav {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  float: left;
+}
+
+#buttons-nav li {
+  width: 50px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+#buttons-nav li img {
+  width: 90%;
+  transition: transform 0.2s;
+}
+
+#buttons-nav li img:hover {
+  transform: scale(1.2);
+}
+
+#content {
+  width: 50%;
+  height: 50%;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.5);
+  overflow-y: auto;
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 25%;
+}
+
+#back {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.text {
+  padding: 0 10px;
+  line-height: 1.5em;
+}
+
+#footer {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+#footer a {
+  color: white;
+}
+
+/* Zura */
+html#zura, #zura body {
+  background: rgb(241,231,103);
+  background: -webkit-linear-gradient(rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+  background: -moz-linear-gradient(rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+  background: -o-linear-gradient(rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+  background: linear-gradient(rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); 
+}
+
+#zura #button {
+  background: rgb(246,230,180);
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(246,230,180,1) 0%, rgba(237,144,23,1) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(246,230,180,1) 0%,rgba(237,144,23,1) 100%);
+  background: radial-gradient(ellipse at center,  rgba(246,230,180,1) 0%,rgba(237,144,23,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=1 );
+}
+
+#zura #button:before {
+  background: #fefcea;
+  background: -moz-linear-gradient(top, #fefcea 0%, #efe6a7 100%);
+  background: -webkit-linear-gradient(top, #fefcea 0%,#efe6a7 100%);
+  background: linear-gradient(to bottom, #fefcea 0%,#efe6a7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#efe6a7',GradientType=0 );
+}
+
+#zura #chibi {
+  background-image: url('/assets/img/hanamaru.png');
+}
+
+/* Ganbaruby */
+html#ganbaruby, #ganbaruby body {
+  background: #f9ccf9;
+  background: -moz-linear-gradient(top, #f9ccf9 0%, #f984d2 100%);
+  background: -webkit-linear-gradient(top, #f9ccf9 0%,#f984d2 100%);
+  background: linear-gradient(to bottom, #f9ccf9 0%,#f984d2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9ccf9', endColorstr='#f984d2',GradientType=0 );
+}
+
+#ganbaruby #button {
+  background: #ff69b4;
+}
+
+#ganbaruby #button:before {
+  background: #f7e3f7;
+  background: -moz-linear-gradient(top, #f7e3f7 1%, #ffe2f6 100%);
+  background: -webkit-linear-gradient(top, #f7e3f7 1%,#ffe2f6 100%);
+  background: linear-gradient(to bottom, #f7e3f7 1%,#ffe2f6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7e3f7', endColorstr='#ffe2f6',GradientType=0 );
+}
+
+#ganbaruby #chibi {
+  background-image: url('/assets/img/ruby.png');
+}
+
+/* Yohane */
+html#yohane, #yohane body {
+  background: #9f9fb5;
+  background: -moz-linear-gradient(top, #9f9fb5 0%, #7171b7 100%);
+  background: -webkit-linear-gradient(top, #9f9fb5 0%,#7171b7 100%);
+  background: linear-gradient(to bottom, #9f9fb5 0%,#7171b7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9f9fb5', endColorstr='#7171b7',GradientType=0 );
+}
+
+#yohane #button {
+  background: #4848B5;
+}
+
+#yohane #button:before {
+  background: #ebe9f9;
+  background: -moz-linear-gradient(top, #ebe9f9 0%, #c1bfea 100%);
+  background: -webkit-linear-gradient(top, #ebe9f9 0%,#c1bfea 100%);
+  background: linear-gradient(to bottom, #ebe9f9 0%,#c1bfea 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe9f9', endColorstr='#c1bfea',GradientType=0 );
+}
+
+#yohane #chibi {
+  background-image: url('/assets/img/yohane.png');
+}
+
+/* Hagu */
+html#hagu, #hagu body {
+  background: #8effd7;
+  background: -moz-linear-gradient(top, #8effd7 0%, #4ccbae 100%);
+  background: -webkit-linear-gradient(top, #8effd7 0%,#4ccbae 100%);
+  background: linear-gradient(to bottom, #8effd7 0%,#4ccbae 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8effd7', endColorstr='#4ccbae',GradientType=0 );
+}
+
+#hagu #button {
+  background: #41AD94;
+}
+
+#hagu #button:before {
+  background: #eafff7;
+  background: -moz-linear-gradient(top, #eafff7 1%, #92e5e4 100%);
+  background: -webkit-linear-gradient(top, #eafff7 1%,#92e5e4 100%);
+  background: linear-gradient(to bottom, #eafff7 1%,#92e5e4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eafff7', endColorstr='#92e5e4',GradientType=0 );
+}
+
+#hagu #chibi {
+  background-image: url('/assets/img/hagu.png');
+}

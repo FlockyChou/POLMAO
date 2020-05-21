@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" id="hagu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <title>Mirai Zura!</title>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <ul id="buttons-nav">
+    <li><a href="/"><img src="/assets/img/hanamaru.png" alt="Mirai Zura!"></a></li>
+    <li><a href="/ganbaruby"><img src="/assets/img/ruby.png" alt="Ganbaruby!"></a></li>
+    <li><a href="/yohane"><img src="/assets/img/yohane.png" alt="Yohane!"></a></li>
+    <li><a href="/hagu"><img src="/assets/img/hagu.png" alt="Hagu!"></a></li>
+  </ul>
+
+  <div id="button" class="button-shadow">
+    <div id="chibi"></div>
+  </div>
+
+  <div id="footer">
+    <a href="/about">
+    <i class="fa fa-info-circle"></i>
+    </a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    /* Audio Files Folder */
+    var folder = 'hagu';
+    /* Max Files */
+    var max  = 1;
+    /* Current File */
+    var curr   = 0;
+    /* Previous File */
+    var prev;
+  </script>
+  <script src="/assets/js/script.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108259019-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108259019-1');
+  </script>
+</body>
+</html>
