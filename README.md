@@ -1,4 +1,2 @@
-# MiraiZura
-Hanamaru go Zura
-
-https://www.miraizura.com/
+# POLMAO
+Fork of FlockyChou/MiraiZura but for Hololive soundbites.
